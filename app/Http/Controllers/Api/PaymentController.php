@@ -22,7 +22,7 @@ class PaymentController extends Controller
 
     public function __construct()
     {
-        self::$userKey = request('X-USER-KEY');
+        self::$userKey = request()->header('X-USER-KEY');
     }
 
     /**
@@ -45,7 +45,7 @@ class PaymentController extends Controller
      *
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"

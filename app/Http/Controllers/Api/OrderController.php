@@ -22,7 +22,7 @@ class OrderController extends Controller
 
     public function __construct()
     {
-        self::$userKey = request('X-USER-KEY');
+        self::$userKey = request()->header('X-USER-KEY');
         $this->middleware('auth:api')->except('tracking');
     }
 
@@ -125,7 +125,7 @@ class OrderController extends Controller
      *
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=false,
      *          @OA\Schema(
      *               type="string"

@@ -10,9 +10,7 @@ use App\Models\User;
 use App\Models\Wishlist;
 use Exception;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
 
 class WishlistController extends Controller
 {
@@ -20,7 +18,7 @@ class WishlistController extends Controller
 
     public function __construct()
     {
-        self::$userKey = request('X-USER-KEY');
+        self::$userKey = request()->header('X-USER-KEY');
     }
 
     /**
@@ -32,7 +30,7 @@ class WishlistController extends Controller
      *
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"
@@ -90,7 +88,7 @@ class WishlistController extends Controller
      *     ),
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"
@@ -162,7 +160,7 @@ class WishlistController extends Controller
      *     ),
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"

@@ -60,7 +60,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -116,7 +116,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -598,7 +598,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -646,7 +646,7 @@
                     },
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -702,7 +702,7 @@
                     },
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -742,7 +742,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": false,
                         "schema": {
                             "type": "string"
@@ -922,7 +922,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": false,
                         "schema": {
                             "type": "string"
@@ -990,7 +990,7 @@
                     },
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -1553,7 +1553,7 @@
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -1601,7 +1601,7 @@
                     },
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -1649,7 +1649,7 @@
                     },
                     {
                         "name": "X-USER-KEY",
-                        "in": "query",
+                        "in": "header",
                         "required": true,
                         "schema": {
                             "type": "string"

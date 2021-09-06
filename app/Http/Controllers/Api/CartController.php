@@ -19,7 +19,7 @@ class CartController extends Controller
 
     public function __construct()
     {
-        self::$userKey = request('X-USER-KEY');
+        self::$userKey = request()->header('X-USER-KEY');
     }
 
     /**
@@ -31,7 +31,7 @@ class CartController extends Controller
      *
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"
@@ -89,7 +89,7 @@ class CartController extends Controller
      *     ),
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"
@@ -160,7 +160,7 @@ class CartController extends Controller
      *     ),
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=true,
      *          @OA\Schema(
      *               type="string"
@@ -215,7 +215,7 @@ class CartController extends Controller
      *
      *     @OA\Parameter(
      *          name="X-USER-KEY",
-     *          in="query",
+     *          in="header",
      *          required=false,
      *          @OA\Schema(
      *               type="string"
