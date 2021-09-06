@@ -12,7 +12,7 @@ class CategoryController extends Controller
 {
     /**
      * @OA\Get (
-     *      path="/api/categories",
+     *      path="/categories",
      *      tags={"Categories"},
      *      summary="Get All Categories",
      *      description="get all categories",
@@ -52,7 +52,7 @@ class CategoryController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/categories/{category_id}",
+     *      path="/categories/{category_id}",
      *      tags={"Categories"},
      *      summary="Show Category",
      *      description="show category",

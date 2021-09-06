@@ -23,7 +23,7 @@ class WishlistController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/wishlist",
+     *      path="/wishlist",
      *      tags={"Wishlist"},
      *      summary="Get User Wishlist",
      *      description="get user wishlist",
@@ -73,7 +73,7 @@ class WishlistController extends Controller
 
     /**
      * @OA\Post (
-     *      path="/api/wishlist/add/{product_id}",
+     *      path="/wishlist/add/{product_id}",
      *      tags={"Wishlist"},
      *      summary="Add To Wishlist",
      *      description="add to wishlist",
@@ -145,7 +145,7 @@ class WishlistController extends Controller
 
     /**
      * @OA\delete (
-     *      path="/api/wishlist/remove/{product_id}",
+     *      path="/wishlist/remove/{product_id}",
      *      tags={"Wishlist"},
      *      summary="Remove From Wishlist",
      *      description="remove from wishlist",

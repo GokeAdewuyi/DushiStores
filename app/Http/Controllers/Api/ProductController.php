@@ -15,7 +15,7 @@ class ProductController extends Controller
 {
     /**
      * @OA\Get (
-     *      path="/api/products",
+     *      path="/products",
      *      tags={"Product"},
      *      summary="Get All Products",
      *      description="get all products",
@@ -55,7 +55,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/show/{product_id}",
+     *      path="/products/show/{product_id}",
      *      tags={"Product"},
      *      summary="Get Product Details",
      *      description="get product detail",
@@ -112,7 +112,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/category/{category_id}",
+     *      path="/products/category/{category_id}",
      *      tags={"Product"},
      *      summary="Get Products By Category",
      *      description="get products by category",
@@ -162,7 +162,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/subcategory/{sub_category_id}",
+     *      path="/products/subcategory/{sub_category_id}",
      *      tags={"Product"},
      *      summary="Get Products By SubCategory",
      *      description="get products by subcategory",
@@ -212,7 +212,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/deals",
+     *      path="/products/deals",
      *      tags={"Product"},
      *      summary="Get Disconted Products",
      *      description="get discounted products",
@@ -259,7 +259,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/top",
+     *      path="/products/top",
      *      tags={"Product"},
      *      summary="Get Top Selling Products",
      *      description="get top selling products",
@@ -303,7 +303,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/new",
+     *      path="/products/new",
      *      tags={"Product"},
      *      summary="Get Products By New Arrivals",
      *      description="get products by new arrivals",
@@ -346,7 +346,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/filter",
+     *      path="/products/filter",
      *      tags={"Product"},
      *      summary="Filter Products By (price range)",
      *      description="get discounted products",
@@ -421,7 +421,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/sort",
+     *      path="/products/sort",
      *      tags={"Product"},
      *      summary="Sort Products By (name, sale, price)",
      *      description="get discounted products",
@@ -478,7 +478,7 @@ class ProductController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/products/search/{search}",
+     *      path="/products/search/{search}",
      *      tags={"Product"},
      *      summary="Search Products",
      *      description="search products",

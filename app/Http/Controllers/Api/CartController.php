@@ -24,7 +24,7 @@ class CartController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/cart",
+     *      path="/cart",
      *      tags={"Cart"},
      *      summary="Get User Cart",
      *      description="get user cart",
@@ -74,7 +74,7 @@ class CartController extends Controller
 
     /**
      * @OA\Post (
-     *      path="/api/cart/add/{product_id}",
+     *      path="/cart/add/{product_id}",
      *      tags={"Cart"},
      *      summary="Add To Cart",
      *      description="add to cart",
@@ -145,7 +145,7 @@ class CartController extends Controller
 
     /**
      * @OA\delete (
-     *      path="/api/cart/remove/{product_id}",
+     *      path="/cart/remove/{product_id}",
      *      tags={"Cart"},
      *      summary="Remove From Cart",
      *      description="remove from cart",
@@ -208,7 +208,7 @@ class CartController extends Controller
 
     /**
      * @OA\Post (
-     *      path="/api/cart/clear",
+     *      path="/cart/clear",
      *      tags={"Cart"},
      *      summary="Clear Cart",
      *      description="clear user cart",

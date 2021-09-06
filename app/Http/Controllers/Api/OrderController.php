@@ -28,7 +28,7 @@ class OrderController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/orders",
+     *      path="/orders",
      *      tags={"Orders"},
      *      summary="Get User Orders",
      *      description="get user orders",
@@ -69,7 +69,7 @@ class OrderController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/orders/{order_id}",
+     *      path="/orders/{order_id}",
      *      tags={"Orders"},
      *      summary="Get User Order details",
      *      description="get user order details",
@@ -118,7 +118,7 @@ class OrderController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/orders/tracking/get",
+     *      path="/orders/tracking/get",
      *      tags={"Orders"},
      *      summary="Track order",
      *      description="track order",

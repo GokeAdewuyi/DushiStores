@@ -11,7 +11,7 @@ class SubCategoryController extends Controller
 {
     /**
      * @OA\Get (
-     *      path="/api/subcategories",
+     *      path="/subcategories",
      *      tags={"SubCategories"},
      *      summary="Get All SubCategories",
      *      description="get all subcategories",
@@ -51,7 +51,7 @@ class SubCategoryController extends Controller
 
     /**
      * @OA\Get (
-     *      path="/api/subcategories/{subCategory_id}",
+     *      path="/subcategories/{subCategory_id}",
      *      tags={"SubCategories"},
      *      summary="Show SubCategory",
      *      description="show subcategory",

@@ -28,7 +28,7 @@ class PaymentController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/payment/initiate/{type}",
+     *      path="/payment/initiate/{type}",
      *      tags={"Checkout"},
      *      summary="Checkout",
      *      description="checkout for both web and mobile app",

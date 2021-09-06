@@ -35,7 +35,7 @@ class AuthController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/key/generate",
+     *      path="/key/generate",
      *      tags={"Auth"},
      *      summary="Generate User Key",
      *      description="Generate a unique key which would be used while the user is unauthenticated. It must be included in every request header with the key X-USER-KEY",
@@ -74,7 +74,7 @@ class AuthController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/login",
+     *      path="/login",
      *      tags={"Auth"},
      *      summary="Login",
      *      description="login",
@@ -155,7 +155,7 @@ class AuthController extends Controller
 
     /**
      * @OA\Post (
-     *      path="/api/register",
+     *      path="/register",
      *      tags={"Auth"},
      *      summary="Register",
      *      description="register",
@@ -272,7 +272,7 @@ class AuthController extends Controller
 
     /**
      * @OA\Post (
-     *      path="/api/logout",
+     *      path="/logout",
      *      tags={"Auth"},
      *      summary="Logout",
      *      description="logout",
@@ -320,7 +320,7 @@ class AuthController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/refresh",
+     *      path="/refresh",
      *      tags={"Auth"},
      *      summary="Refresh Token",
      *      description="refresh token",
@@ -364,7 +364,7 @@ class AuthController extends Controller
     /**
      *
      * @OA\Put (
-     *      path="/api/profile/update",
+     *      path="/profile/update",
      *      tags={"Auth"},
      *      summary="Update Profile",
      *      description="update profile",
@@ -482,7 +482,7 @@ class AuthController extends Controller
 
     /**
      * @OA\Put (
-     *      path="/api/password/update",
+     *      path="/password/update",
      *      tags={"Auth"},
      *      summary="Update Password",
      *      description="update password",

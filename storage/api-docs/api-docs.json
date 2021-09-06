@@ -19,14 +19,14 @@
         }
     ],
     "paths": {
-        "/api/key/generate": {
+        "/key/generate": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Generate User Key",
                 "description": "Generate a unique key which would be used while the user is unauthenticated. It must be included in every request header with the key X-USER-KEY",
-                "operationId": "db388711da42f3bb4b5c8c3f46d87c66",
+                "operationId": "e5f9fbf77d6880b8ba95abe99cdadb5d",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -49,14 +49,14 @@
                 }
             }
         },
-        "/api/login": {
+        "/login": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Login",
                 "description": "login",
-                "operationId": "ea134134deae11eb974c719450ef8a02",
+                "operationId": "a67f672dd0794a3cefddb0051a2e2f44",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -105,14 +105,14 @@
                 }
             }
         },
-        "/api/register": {
+        "/register": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Register",
                 "description": "register",
-                "operationId": "58fe5a217ef88ae75e9b530a5e5817d1",
+                "operationId": "daa91862204df8c9b2e5e8b24aae6618",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -185,14 +185,14 @@
                 }
             }
         },
-        "/api/logout": {
+        "/logout": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Logout",
                 "description": "logout",
-                "operationId": "5ebea01ab5f21df71d38f3505718a1d7",
+                "operationId": "6fa87e6ae9c508a3f355b05d51c4b335",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -215,14 +215,14 @@
                 }
             }
         },
-        "/api/refresh": {
+        "/refresh": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Refresh Token",
                 "description": "refresh token",
-                "operationId": "be1bcad263a8745277dd14f08d804e94",
+                "operationId": "d53c97fd114141e943f376a442f57076",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -245,14 +245,14 @@
                 }
             }
         },
-        "/api/profile/update": {
+        "/profile/update": {
             "put": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Update Profile",
                 "description": "update profile",
-                "operationId": "38e2ca70badb9c37a458ce33ab33cdb7",
+                "operationId": "e863567a3fd529f772f6b6f35f0530b6",
                 "parameters": [
                     {
                         "name": "first_name",
@@ -341,14 +341,14 @@
                 }
             }
         },
-        "/api/password/update": {
+        "/password/update": {
             "put": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Update Password",
                 "description": "update password",
-                "operationId": "a2fdbeb812ad01ab712b0b6cfd743f88",
+                "operationId": "1261dbf7f3439fdc5a1d48bc9482e70a",
                 "parameters": [
                     {
                         "name": "old_password",
@@ -587,14 +587,14 @@
                 }
             }
         },
-        "/api/cart": {
+        "/cart": {
             "get": {
                 "tags": [
                     "Cart"
                 ],
                 "summary": "Get User Cart",
                 "description": "get user cart",
-                "operationId": "f5a6af9d859f5af3146dd7e0f33f80c2",
+                "operationId": "fe28616ebca8afc082ef3f0d6b278410",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -627,14 +627,14 @@
                 }
             }
         },
-        "/api/cart/add/{product_id}": {
+        "/cart/add/{product_id}": {
             "post": {
                 "tags": [
                     "Cart"
                 ],
                 "summary": "Add To Cart",
                 "description": "add to cart",
-                "operationId": "9d39f698622970bdb9aea90fd4c1d036",
+                "operationId": "2ecb684ea4bc5ef517a124f2d0d88ac9",
                 "parameters": [
                     {
                         "name": "product_id",
@@ -683,14 +683,14 @@
                 }
             }
         },
-        "/api/cart/remove/{product_id}": {
+        "/cart/remove/{product_id}": {
             "delete": {
                 "tags": [
                     "Cart"
                 ],
                 "summary": "Remove From Cart",
                 "description": "remove from cart",
-                "operationId": "187dfc6f9cc9208d58fa8c3991730bc1",
+                "operationId": "9ebaf63a78ebfe9062c1ecc23af4f51e",
                 "parameters": [
                     {
                         "name": "product_id",
@@ -731,14 +731,14 @@
                 }
             }
         },
-        "/api/cart/clear": {
+        "/cart/clear": {
             "post": {
                 "tags": [
                     "Cart"
                 ],
                 "summary": "Clear Cart",
                 "description": "clear user cart",
-                "operationId": "251a2b5788101fad9b6c783a71a3c193",
+                "operationId": "4f5496fbfd36e2bfbb272c0f803e0833",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -771,14 +771,14 @@
                 }
             }
         },
-        "/api/categories": {
+        "/categories": {
             "get": {
                 "tags": [
                     "Categories"
                 ],
                 "summary": "Get All Categories",
                 "description": "get all categories",
-                "operationId": "ac9c4d978ea4e5b72915ca9728e5b8b1",
+                "operationId": "b1b247b2b491b0491c3c728dc33f23f0",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -801,14 +801,14 @@
                 }
             }
         },
-        "/api/categories/{category_id}": {
+        "/categories/{category_id}": {
             "get": {
                 "tags": [
                     "Categories"
                 ],
                 "summary": "Show Category",
                 "description": "show category",
-                "operationId": "36ed25ee990ae18dc1ebab74be9c8d8d",
+                "operationId": "8616d01922e8d15c418af56b19a3d62f",
                 "parameters": [
                     {
                         "name": "category_id",
@@ -841,14 +841,14 @@
                 }
             }
         },
-        "/api/orders": {
+        "/orders": {
             "get": {
                 "tags": [
                     "Orders"
                 ],
                 "summary": "Get User Orders",
                 "description": "get user orders",
-                "operationId": "955bb77a45ae173a485fadb8befed93f",
+                "operationId": "8f3183bfa0ecb8a2c864cbf972b8061d",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -871,14 +871,14 @@
                 }
             }
         },
-        "/api/orders/{order_id}": {
+        "/orders/{order_id}": {
             "get": {
                 "tags": [
                     "Orders"
                 ],
                 "summary": "Get User Order details",
                 "description": "get user order details",
-                "operationId": "a04920e602a108adcf21d69c5f80476d",
+                "operationId": "a73bd9053de2c427b570d3fa4081051d",
                 "parameters": [
                     {
                         "name": "order_id",
@@ -911,14 +911,14 @@
                 }
             }
         },
-        "/api/orders/tracking/get": {
+        "/orders/tracking/get": {
             "get": {
                 "tags": [
                     "Orders"
                 ],
                 "summary": "Track order",
                 "description": "track order",
-                "operationId": "534aa4f568fd904d6030704a22d9e0bf",
+                "operationId": "7311a0e2ab0a64ccaa9c939e65bbc662",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -967,14 +967,14 @@
                 }
             }
         },
-        "/api/payment/initiate/{type}": {
+        "/payment/initiate/{type}": {
             "post": {
                 "tags": [
                     "Checkout"
                 ],
                 "summary": "Checkout",
                 "description": "checkout for both web and mobile app",
-                "operationId": "ac9d632dd9eed436e5b90de3c254f7cc",
+                "operationId": "5122d81f21504227b70ed578e2076875",
                 "parameters": [
                     {
                         "name": "type",
@@ -1099,14 +1099,14 @@
                 }
             }
         },
-        "/api/products": {
+        "/products": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get All Products",
                 "description": "get all products",
-                "operationId": "d97d1c3727cbac49708b85f7d11f7d58",
+                "operationId": "080f057905dc32d2f11065d606dc4cd6",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -1129,14 +1129,14 @@
                 }
             }
         },
-        "/api/products/show/{product_id}": {
+        "/products/show/{product_id}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Product Details",
                 "description": "get product detail",
-                "operationId": "03a3d11d2dd72a2c96cc4622572fbaad",
+                "operationId": "a3fb2006ebf564e679fbe242f8b42748",
                 "parameters": [
                     {
                         "name": "product_id",
@@ -1169,14 +1169,14 @@
                 }
             }
         },
-        "/api/products/category/{category_id}": {
+        "/products/category/{category_id}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Products By Category",
                 "description": "get products by category",
-                "operationId": "36f8a4e75f02a0726a8a5e41b5b56fca",
+                "operationId": "7a6f59033f1c0a789302198fed13646d",
                 "parameters": [
                     {
                         "name": "category_id",
@@ -1209,14 +1209,14 @@
                 }
             }
         },
-        "/api/products/subcategory/{sub_category_id}": {
+        "/products/subcategory/{sub_category_id}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Products By SubCategory",
                 "description": "get products by subcategory",
-                "operationId": "458db33ac05430473de2c1de9682bf53",
+                "operationId": "eb9c0ed855a67be10583b67d04804879",
                 "parameters": [
                     {
                         "name": "sub_category_id",
@@ -1249,14 +1249,14 @@
                 }
             }
         },
-        "/api/products/deals": {
+        "/products/deals": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Disconted Products",
                 "description": "get discounted products",
-                "operationId": "d1a823a732edd4b21d52679f6581ef8c",
+                "operationId": "beb2e21c90053f896037e451735c665f",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -1279,14 +1279,14 @@
                 }
             }
         },
-        "/api/products/top": {
+        "/products/top": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Top Selling Products",
                 "description": "get top selling products",
-                "operationId": "950dea6509757b621b60df9034c2a288",
+                "operationId": "5a4af20cd93eb6912bcb52d06b1483c9",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -1309,14 +1309,14 @@
                 }
             }
         },
-        "/api/products/new": {
+        "/products/new": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get Products By New Arrivals",
                 "description": "get products by new arrivals",
-                "operationId": "d96d9b083ebd11c39f9041815ac7c796",
+                "operationId": "e4946d1b09a10add0321930b99039664",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -1339,14 +1339,14 @@
                 }
             }
         },
-        "/api/products/filter": {
+        "/products/filter": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Filter Products By (price range)",
                 "description": "get discounted products",
-                "operationId": "dc537a7dfbacebd44641b056586b4ef9",
+                "operationId": "ad812bb4da73c5333d7582f04e032596",
                 "parameters": [
                     {
                         "name": "from",
@@ -1387,14 +1387,14 @@
                 }
             }
         },
-        "/api/products/sort": {
+        "/products/sort": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Sort Products By (name, sale, price)",
                 "description": "get discounted products",
-                "operationId": "c77a85534522d6f64c85faebb7312442",
+                "operationId": "1b1828b046079214f18d91c3c85dbdc8",
                 "parameters": [
                     {
                         "name": "sort",
@@ -1432,14 +1432,14 @@
                 }
             }
         },
-        "/api/products/search/{search}": {
+        "/products/search/{search}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Search Products",
                 "description": "search products",
-                "operationId": "c419dec97880e2c5ec7c74936b02ac69",
+                "operationId": "0772413884da7f642bf17237865401c7",
                 "parameters": [
                     {
                         "name": "search",
@@ -1472,14 +1472,14 @@
                 }
             }
         },
-        "/api/subcategories": {
+        "/subcategories": {
             "get": {
                 "tags": [
                     "SubCategories"
                 ],
                 "summary": "Get All SubCategories",
                 "description": "get all subcategories",
-                "operationId": "7328e073e16bef20d03b6e9650f37f3c",
+                "operationId": "29cd31bebbdb5346785a3c06c0cb6e6c",
                 "responses": {
                     "200": {
                         "description": "Success",
@@ -1502,14 +1502,14 @@
                 }
             }
         },
-        "/api/subcategories/{subCategory_id}": {
+        "/subcategories/{subCategory_id}": {
             "get": {
                 "tags": [
                     "SubCategories"
                 ],
                 "summary": "Show SubCategory",
                 "description": "show subcategory",
-                "operationId": "b457c52f8819cc6a8b2d3ee353f9bd07",
+                "operationId": "d439366e0fbc7fc91d8312e9db9200b3",
                 "parameters": [
                     {
                         "name": "subCategory_id",
@@ -1542,14 +1542,14 @@
                 }
             }
         },
-        "/api/wishlist": {
+        "/wishlist": {
             "get": {
                 "tags": [
                     "Wishlist"
                 ],
                 "summary": "Get User Wishlist",
                 "description": "get user wishlist",
-                "operationId": "a10ee44a9d61babdc7874c7624617e44",
+                "operationId": "a6f1c8914c5a9ea641a2a11409a219f0",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -1582,14 +1582,14 @@
                 }
             }
         },
-        "/api/wishlist/add/{product_id}": {
+        "/wishlist/add/{product_id}": {
             "post": {
                 "tags": [
                     "Wishlist"
                 ],
                 "summary": "Add To Wishlist",
                 "description": "add to wishlist",
-                "operationId": "fb0ae06048c583d49f2cfaf198ff3120",
+                "operationId": "89ad89cec271c1af55f2cc531bb4dfc6",
                 "parameters": [
                     {
                         "name": "product_id",
@@ -1630,14 +1630,14 @@
                 }
             }
         },
-        "/api/wishlist/remove/{product_id}": {
+        "/wishlist/remove/{product_id}": {
             "delete": {
                 "tags": [
                     "Wishlist"
                 ],
                 "summary": "Remove From Wishlist",
                 "description": "remove from wishlist",
-                "operationId": "7d1f496a2167768532a8bf8cd403c0df",
+                "operationId": "1583dfe286596bf86c8bb6413a56bbed",
                 "parameters": [
                     {
                         "name": "product_id",
