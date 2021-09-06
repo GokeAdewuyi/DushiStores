@@ -19,7 +19,7 @@ class VerificationController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/email/verify",
+     *      path="/email/verify",
      *      tags={"Auth"},
      *      summary="Verify Email Address",
      *      description="verify user email address",
@@ -101,7 +101,7 @@ class VerificationController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/email/resend",
+     *      path="/email/resend",
      *      tags={"Auth"},
      *      summary="Resend Email Verification link",
      *      description="request a new email address verification link",

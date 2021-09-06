@@ -17,7 +17,7 @@ class ResetPasswordController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/password/forgot",
+     *      path="/password/forgot",
      *      tags={"Auth"},
      *      summary="Password Reset Request",
      *      description="request a password reset link",
@@ -84,7 +84,7 @@ class ResetPasswordController extends Controller
     /**
      *
      * @OA\Post (
-     *      path="/api/password/reset",
+     *      path="/password/reset",
      *      tags={"Auth"},
      *      summary="Reset Password",
      *      description="reset password",

@@ -389,14 +389,14 @@
                 }
             }
         },
-        "/api/password/forgot": {
+        "/password/forgot": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Password Reset Request",
                 "description": "request a password reset link",
-                "operationId": "76ff935e4d0f45a909118afa0de9d6b0",
+                "operationId": "c2a672ead0972666c92d2bf4eae4accb",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -437,14 +437,14 @@
                 }
             }
         },
-        "/api/password/reset": {
+        "/password/reset": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Reset Password",
                 "description": "reset password",
-                "operationId": "51a8fdb8ae24613783e14e9a5b8f5a60",
+                "operationId": "174e1aeaec3a51fa2e0fd955de26cfcd",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -501,14 +501,14 @@
                 }
             }
         },
-        "/api/email/verify": {
+        "/email/verify": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Verify Email Address",
                 "description": "verify user email address",
-                "operationId": "eb0ce069d7d6ed0183fa100da8258f06",
+                "operationId": "b4ad1a25fff73af055195783c6ab2845",
                 "parameters": [
                     {
                         "name": "X-USER-KEY",
@@ -557,14 +557,14 @@
                 }
             }
         },
-        "/api/email/resend": {
+        "/email/resend": {
             "post": {
                 "tags": [
                     "Auth"
                 ],
                 "summary": "Resend Email Verification link",
                 "description": "request a new email address verification link",
-                "operationId": "15782e9247f4b1332ba7269746df3299",
+                "operationId": "2beb5d4cceb20195a69a12a3e74e4110",
                 "responses": {
                     "200": {
                         "description": "Success",
