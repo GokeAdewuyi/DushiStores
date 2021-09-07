@@ -148,8 +148,8 @@ class AuthController extends Controller
             return response()->json(['status' => false, 'errors' => 'Invalid credentials'], 401);
         }
 
-        CartController::moveUserCartToDatabase(request('X-USER-KEY'));
-        WishlistController::moveUserWishlistToDatabase(request('X-USER-KEY'));
+        CartController::moveUserCartToDatabase(self::$userKey);
+        WishlistController::moveUserWishlistToDatabase(self::$userKey);
         return static::createNewToken($token);
     }
 
