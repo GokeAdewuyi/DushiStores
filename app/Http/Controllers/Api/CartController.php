@@ -334,15 +334,17 @@ class CartController extends Controller
                 if (!$userCart)
                     $userCart = $user->cart()->create(['total' => 0]);
                 foreach ($cart->items as $item) {
-                    if ($exist = $userCart->items()->where('product_id', $item['product_id'])->first())
+                    if ($exist = $userCart->items()->where('product_id', $item['product_id'])->first()) {
                         if ($exist->update(['quantity' => (int)$exist['quantity'] + (int)$item['quantity']])) {
                             $item->delete();
                             $userCart->update(['total' => (float)$userCart['total'] + ((float)$item->product->price * (int)$item['quantity'])]);
-                        } else
-                            if ($userCart->items()->create(['product_id' => $item['product_id'], 'quantity' => $item['quantity']])) {
-                                $item->delete();
-                                $userCart->update(['total' => (float)$userCart['total'] + ((float)$item->product->price * (int)$item['quantity'])]);
-                            }
+                        }
+                    }  else {
+                        if ($userCart->items()->create(['product_id' => $item['product_id'], 'quantity' => $item['quantity']])) {
+                            $item->delete();
+                            $userCart->update(['total' => (float)$userCart['total'] + ((float)$item->product->price * (int)$item['quantity'])]);
+                        }
+                    }
                 }
                 $cart->delete();
             }
